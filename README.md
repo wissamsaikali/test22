@@ -1,1 +1,5 @@
-# test2
+import("{{ AncestorClass2 }}");
+
+
+
+return 21;
