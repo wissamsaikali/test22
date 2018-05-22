@@ -1,0 +1,16 @@
+import("{{ AncestorClass }}");
+
+var {{ClassName}} = Class({{ AncestorClass }},{
+  constructor: function(options) {
+    {{ClassName}}.$super.call(this, options);
+    this.set("cls", "{{ sClassPath }}");
+  },
+  super: "{{ AncestorClass }}",
+  icon: "{{icon}}",
+  description : "{{description}}",
+  {{#attributes}} 
+    "{{key}}.definition" : { "defaultValue": {{#isString}} "{{value}}" {{/isString}} {{^isString}} {{{value}}} {{/isString}}, "type" : "{{type}}", "visualization": {{{visualization}}} },
+    "{{key}}" :  {{#isString}} "{{value}}" {{/isString}} {{^isString}} {{{value}}} {{/isString}},
+  {{/attributes}}
+   {{#methods}} {{name}} : {{method}}, {{/methods}}
+})
