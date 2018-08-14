@@ -1,4 +1,4 @@
-
+  
 		
 //First, we'll require the 'http' library to use later for calling a 3rd party webservice
 var http = require("http");
@@ -21,7 +21,7 @@ if (name != null) storage.local.theName = name
 
 //Now let's obtain the client IP from the http request header
 var ip = request.headers["x-forwarded-for"];
-return ip;
+
 //Let's see now how to make a request to a 3rd party web service
 
 //The request object below will be used to make an HTTP call that will do a country lookup based on the IP 
@@ -34,7 +34,6 @@ var requestObject = {
 //... and now we issue the request
 var country = null;
 var response = http.request(requestObject);
-return response;
 if(response.status == "200"){
  var result = JSON.parse(response.body);
  country = result.country;
@@ -43,7 +42,6 @@ if(response.status == "200"){
 //Finally, let's construct the response that this script will return
 var scriptResponse = "Hello";
 if(storage.local.theName != null) scriptResponse += " " + storage.local.theName;
-
 if(country != null) scriptResponse += " from " + country;
 scriptResponse += "!";
 
