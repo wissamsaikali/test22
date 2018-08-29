@@ -10,7 +10,7 @@ var name = request.parameters.myName
 //Suppose you want to make that value available to future running script instances
 //you can store it in a persistent variable
 if (name != null) storage.local.theName = name
-
+name="myGithubFile";
 //The value of 'storage.local.theName' is automatically stored in a persistent database.
 //So from now on, it will be available to all instances of this script to read an modify,
 //therefore you will not have to pass it as an http request parameter again.
