@@ -1,5 +1,5 @@
 
 		
-               return "<xml> test </xml>";
+               return {"read":"nobody","write":"nobody","execute":'nobody'} ;
 		
 	
