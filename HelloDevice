@@ -18,6 +18,7 @@ name="myGithubFile";
 //Persistent variables that start with 'storage.global' work the same 
 //but are available to all running script instances in your account .
 
+this is an <-- change 
 
 //Now let's obtain the client IP from the http request header
 var ip = request.headers["x-forwarded-for"];
