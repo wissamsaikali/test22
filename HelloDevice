@@ -15,6 +15,13 @@ name="myGithubFile";
 //So from now on, it will be available to all instances of this script to read an modify,
 //therefore you will not have to pass it as an http request parameter again.
 
+
+test
+
+
+
+
+
 //Persistent variables that start with 'storage.global' work the same 
 //but are available to all running script instances in your account .
 
