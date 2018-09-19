@@ -10,22 +10,14 @@ var name = request.parameters.myName
 //Suppose you want to make that value available to future running script instances
 //you can store it in a persistent variable
 if (name != null) storage.local.theName = name
-name="myGithubFile";
+
 //The value of 'storage.local.theName' is automatically stored in a persistent database.
 //So from now on, it will be available to all instances of this script to read an modify,
 //therefore you will not have to pass it as an http request parameter again.
 
-
-test
-
-
-
-
-
 //Persistent variables that start with 'storage.global' work the same 
 //but are available to all running script instances in your account .
 
-this is an <-- change 
 
 //Now let's obtain the client IP from the http request header
 var ip = request.headers["x-forwarded-for"];
@@ -40,7 +32,7 @@ var requestObject = {
 }
 
 //... and now we issue the request
-var country = "Lebanon";
+var country = null;
 var response = http.request(requestObject);
 if(response.status == "200"){
  var result = JSON.parse(response.body);
@@ -56,4 +48,3 @@ scriptResponse += "!";
 return scriptResponse;
 
 	
-final test
