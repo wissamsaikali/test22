@@ -1,1 +1,1 @@
-wissam --- return apsdb.social.facebook.getApiCall("34172668589w5718", "", "GET",  "https://graph.facebook.com/me/feed",  "{\"message\":\"This is a test\"}");
+return apsdb.social.facebook.getApiCall("34172668589w5718", "", "GET",  "https://graph.facebook.com/me/feed",  "{\"message\":\"This is a test\"}");
