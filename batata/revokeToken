@@ -1,0 +1,2 @@
+var user = require("user");
+return user.revokeToken("test2","Rjk2MUQ2NUY5MDp0ZXN0Mjo0NkQzMjkzQ0EzNjBFRjg1REFGN0Q3MUZFNjk0NDA2RA==");
