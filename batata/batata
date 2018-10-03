@@ -1,0 +1,2 @@
+var user = require("user");
+return user.generateToken("test2")
