@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js" ></script>
+        <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+        <script>
+        $(document).ready(function() {
+           // localStorage.removeItem("user");
+            $.removeCookie('token',{'path':'/'});
+            location.href=  "/asset-tracking/view/html/login.html";
+        });
+        </script>
+    </head>
+</html>
