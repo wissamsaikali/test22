@@ -1,0 +1,1 @@
+{"acl":{"read":"nobody","write":"nobody","execute":"authenticated"},"contentType":"application/vnd.scriptr-javascript","userConfig":"/*#*beginblockly*#*<xml xmlns=\"http://www.w3.org/1999/xhtml\"><block type=\"text\" id=\"15\" x=\"333\" y=\"81\"><field name=\"TEXT\"><\/field><\/block><\/xml>*#*#*/"}
