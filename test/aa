@@ -1,0 +1,20 @@
+var _ = require("modules/underscore/underscore.js")._;
+
+var jossWhedon = { age: 49, occupations: ["writer", "director", "producer", "composer", "actor"], 
+                  shows: [ { title: "Dollhouse", femaleLead: true, 
+                            characters: [ { name: "Echo", role: "doll" }, { name: "Topher", role: "mad scientist" } ] }, 
+                          { title: "Dr. Horrible's Sing-Along Blog", characters: [ { name: "Billy", role: "mad scientist" }, { name: "Penny", role: "love interest" } ] },
+                          { title: "Buffy the Vampire Slayer", femaleLead: true, characters: [ { name: "Buffy", role: "slayer" }, { name: "Angel", role: "love interest" } ] }, { title: "Firefly", characters: [ { name: "Mal", role: "captain" }, { name: "Kaylee", role: "mechanic" } ] } ] }
+
+
+var x = _.pluck(jossWhedon.shows, "title");
+//return _.pick({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
+//  return _.isNumber(value);
+//});
+
+//return _.countBy(_.flatten(_.pluck(jossWhedon.shows, "characters")), "role");
+
+var isMadScientist = function(character) { return character.role === "mad scientist" }; 
+var memo = "";
+_.reduce(jossWhedon.shows, function(memo, show)
+         { if (_.some(show.characters, isMadScientist)) { memo[show.title] = _.detect(show.characters, isMadScientist).name; } return memo; }, {});
