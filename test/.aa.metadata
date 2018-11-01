@@ -1,1 +1,0 @@
-{"acl":{"read":"bb;group:script-read","write":"bb","execute":"authenticated"},"contentType":"application/vnd.scriptr-javascript"}
