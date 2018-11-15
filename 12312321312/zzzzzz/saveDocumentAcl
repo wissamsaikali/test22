@@ -1,0 +1,10 @@
+
+
+return runAs(function(){
+    
+var document = require("document");
+  //  return  document.query({"fields":"*" , "query" : "key=\"3CB89FA35012F474AFA58AFA57458E02\""});
+// Create a document with the privileges of the device issuing the request
+ return document.get("3CB89FA35012F474AFA58AFA57458E02");
+
+}, "testDevice");
