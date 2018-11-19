@@ -1,7 +1,0 @@
-			
-var documents = require("document");
-documents.save({"key": "hellozzz", "name": "Hallo", "document.writeACL":"user3", "document.readACL":"nobody"});
-
-return runAs(function(){
-    return documents.get("hellozzz");
-}, "batata");
