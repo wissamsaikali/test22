@@ -1,3 +1,5 @@
+//This is from tt branch
+
 import("{{ AncestorClass }}");
 
 var {{ClassName}} = Class({{ AncestorClass }},{
