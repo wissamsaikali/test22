@@ -20,5 +20,5 @@ var {{ClassName}} = Class({{ AncestorClass }},{
 
 
 
-
+ 
 
