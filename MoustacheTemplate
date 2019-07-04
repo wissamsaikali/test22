@@ -14,3 +14,9 @@ var {{ClassName}} = Class({{ AncestorClass }},{
   {{/attributes}}
    {{#methods}} {{name}} : {{method}}, {{/methods}}
 })
+
+
+
+
+
+//This is from tt branch.
