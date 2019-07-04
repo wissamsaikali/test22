@@ -1,4 +1,4 @@
-import("{{ AncestorClass }}");
+import("{{ AncestorClass }}"); // this is master
 
 var {{ClassName}} = Class({{ AncestorClass }},{
   constructor: function(options) {
